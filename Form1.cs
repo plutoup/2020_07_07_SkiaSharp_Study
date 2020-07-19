@@ -21,7 +21,7 @@ namespace _2020_07_07_SkiaSharp_Study
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            using (SKSurface surface = SKSurface.Create(make_image(300, 250)))
+            using (SKSurface surface = SKSurface.Create(make_image(500, 500)))
             {
                 SKCanvas canvas = surface.Canvas;
 
@@ -31,7 +31,7 @@ namespace _2020_07_07_SkiaSharp_Study
                 {
                     paint.Color = SKColors.Blue;
                     paint.IsAntialias = true;
-                    paint.StrokeWidth = 1;
+                    paint.StrokeWidth = 15;
                     paint.Style = SKPaintStyle.Stroke;
                     canvas.DrawCircle(50, 50, 30, paint); //arguments are x position, y position, radius, and paint
                 }
